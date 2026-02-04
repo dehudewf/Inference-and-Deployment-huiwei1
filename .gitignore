@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+*.swp
+*.swo
+
+# Build directories
+build/
+cmake-build-*/
+*.o
+*.so
+*.a
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Large external repos (can add as submodules if needed)
+vllm/
+KsanaLLM/
