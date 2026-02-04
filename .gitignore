@@ -25,6 +25,6 @@ env/
 .vscode/
 *.code-workspace
 
-# Large external repos (can add as submodules if needed)
-vllm/
-KsanaLLM/
+# Compiled libraries
+*.so
+lib/
