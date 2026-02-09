@@ -27,6 +27,10 @@ set (sample_flash_attention_v6_files
     flash_attention_v6.cu
 )
 
+set (sample_benchmark_all_files
+    benchmark_all.cu
+)
+
 set (SAMPLES_HEADER_DIR
     ${PROJECT_SOURCE_DIR}/flash_attention
 )
@@ -77,3 +81,7 @@ endif()
 add_executable(flash_attention_v6 ${sample_flash_attention_v6_files})
 target_compile_features(flash_attention_v6 PUBLIC cxx_std_14)
 target_link_libraries(flash_attention_v6 PUBLIC attention)
+
+add_executable(benchmark_all ${sample_benchmark_all_files})
+target_compile_features(benchmark_all PUBLIC cxx_std_14)
+target_link_libraries(benchmark_all PUBLIC attention)
